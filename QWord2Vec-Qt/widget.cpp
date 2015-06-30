@@ -1,5 +1,6 @@
 #include "widget.h"
 #include "ui_widget.h"
+#include "QFileDialog"
 #define doc pDocument
 #define EXP_TABLE_SIZE 1000
 #define MAX_EXP 6
@@ -137,4 +138,10 @@ void Widget::applySettings()
     else pDocument->hs=0;
     if(ui->binary->isChecked()) pDocument->binary=1;
     else pDocument->binary=0;
+}
+
+void Widget::on_pushButton_clicked()
+{
+    QString filename=QFileDialog::getOpenFileName(this,"Open Input File","text files","text files(*)");
+    ui->input_file->setText(filename);
 }

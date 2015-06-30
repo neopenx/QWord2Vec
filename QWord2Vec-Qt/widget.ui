@@ -328,7 +328,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>Input&amp;&amp;Output</string>
+    <string>Input&amp;&amp;Output(default: : root folder)</string>
    </property>
    <widget class="QWidget" name="layoutWidget_8">
     <property name="geometry">
@@ -343,14 +343,17 @@
      <item>
       <widget class="QLineEdit" name="output_file">
        <property name="text">
-        <string>vector.bin</string>
+        <string>vectors.bin</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_2">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="text">
-        <string>Output</string>
+        <string>Output Name</string>
        </property>
       </widget>
      </item>
@@ -395,7 +398,7 @@
      <item>
       <widget class="QPushButton" name="pushButton">
        <property name="text">
-        <string>Input</string>
+        <string>Input File</string>
        </property>
       </widget>
      </item>
@@ -421,7 +424,7 @@
      <x>400</x>
      <y>60</y>
      <width>471</width>
-     <height>261</height>
+     <height>301</height>
     </rect>
    </property>
    <property name="readOnly">
@@ -432,7 +435,7 @@
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>330</y>
+     <y>370</y>
      <width>471</width>
      <height>31</height>
     </rect>
